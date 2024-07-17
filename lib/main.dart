@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'iniciar_sesion.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,11 +9,7 @@ class MyApp extends StatelessWidget	{
   @override
   Widget build(BuildContext context) {
      return MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('Iniciar sesión'),
-          ),
-        ),
+        home: InicioSesion()
      );
   }
 }
