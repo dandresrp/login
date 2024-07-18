@@ -4,13 +4,9 @@ class InicioSesion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Iniciar Sesión'),
-        backgroundColor: Colors.amber.shade300,
-      ),
       body: Center(
         child: Container(
-          color: Colors.grey.shade200,
+          color: Color.fromRGBO(119, 228, 200,1),
           margin: EdgeInsets.all(30),
           padding: EdgeInsets.all(30),
           height: 300,
@@ -32,6 +28,16 @@ class InicioSesion extends StatelessWidget {
                     TextFormField()
                   ],
                 )
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  'Registrarse',
+                  style: TextStyle(
+                    color: Colors.white
+                  ),
+                ),
+                style: TextButton.styleFrom(backgroundColor: Color.fromRGBO(69, 53, 193,1)),
               ),
             ],
           ),
