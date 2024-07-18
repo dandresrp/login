@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:login/pantalla_home.dart';
-import 'package:login/pantalla_registro.dart';
-import 'iniciar_sesion.dart';
+import 'package:login/pantallas/inicio.dart';
+import 'package:login/pantallas/registro.dart';
+import 'pantallas/inicio_sesion.dart';
 
 void main() => runApp(MyApp());
 
