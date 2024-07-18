@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/pantalla_home.dart';
 import 'package:login/pantalla_registro.dart';
 import 'iniciar_sesion.dart';
 
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget	{
         initialRoute: 'iniciarSesion',
         routes: {
           'iniciarSesion': (context) => InicioSesion(),
-          'registro': (context) => PantallaRegistro()
+          'registro': (context) => PantallaRegistro(),
+          'home': (context) => PantallaHome(),
         },
      );
   }
