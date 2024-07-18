@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/pantalla_registro.dart';
 import 'iniciar_sesion.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +11,11 @@ class MyApp extends StatelessWidget	{
   Widget build(BuildContext context) {
      return MaterialApp(
       debugShowCheckedModeBanner: false,
-        home: InicioSesion()
+        initialRoute: 'registro',
+        routes: {
+          'iniciarSesion': (context) => InicioSesion(),
+          'registro': (context) => PantallaRegistro()
+        },
      );
   }
 }
