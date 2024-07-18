@@ -5,7 +5,7 @@ class InicioSesion extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Iniciar Sesión'),
+        title: Text('Iniciar sesión'),
         backgroundColor: Colors.amber.shade300,
       ),
       body: Center(
