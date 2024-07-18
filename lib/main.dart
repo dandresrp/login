@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget	{
   Widget build(BuildContext context) {
      return MaterialApp(
       debugShowCheckedModeBanner: false,
-        initialRoute: 'registro',
+        initialRoute: 'iniciarSesion',
         routes: {
           'iniciarSesion': (context) => InicioSesion(),
           'registro': (context) => PantallaRegistro()

@@ -30,14 +30,16 @@ class InicioSesion extends StatelessWidget {
                 )
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed('registro');
+                },
+                style: TextButton.styleFrom(backgroundColor: Color.fromRGBO(69, 53, 193,1)),
                 child: Text(
                   'Registrarse',
                   style: TextStyle(
                     color: Colors.white
                   ),
                 ),
-                style: TextButton.styleFrom(backgroundColor: Color.fromRGBO(69, 53, 193,1)),
               ),
             ],
           ),
