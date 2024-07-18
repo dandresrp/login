@@ -14,39 +14,75 @@ class InicioSesion extends StatelessWidget {
           ),
           margin: EdgeInsets.all(30),
           padding: EdgeInsets.all(20),
-          height: 300,
+          height: 400,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text('Iniciar sesión'),
-              Text('Correo electrónico'),
-              Form(
-                child: Column(
-                  children: [
-                    TextFormField()
-                  ],
-                )
-              ),
-              Text('Contraseña'),
-              Form(
-                child: Column(
-                  children: [
-                    TextFormField()
-                  ],
-                )
-              ),
-              TextButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed('registro');
-                },
-                style: TextButton.styleFrom(backgroundColor: Color.fromRGBO(69, 53, 193,1)),
-                child: Text(
-                  'Registrarse',
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
+              Text(
+                'Iniciar sesión',
+                style: TextStyle(
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.bold
                 ),
               ),
+              Divider(color: Colors.transparent,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: const [
+                  Text('Correo electrónico'),
+                ],
+              ),
+              Form(
+                child: Column(
+                  children: [
+                    TextFormField()
+                  ],
+                )
+              ),
+              Divider(color: Colors.transparent,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: const [
+                  Text('Contraseña'),
+                ],
+              ),
+              Form(
+                child: Column(
+                  children: [
+                    TextFormField()
+                  ],
+                )
+              ),
+              Divider(color: Colors.transparent,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('registro');
+                    },
+                    style: TextButton.styleFrom(backgroundColor: Color.fromRGBO(69, 53, 193,1)),
+                    child: Text(
+                      'Iniciar Sesión',
+                      style: TextStyle(
+                        color: Colors.white
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('registro');
+                    },
+                    style: TextButton.styleFrom(backgroundColor: Color.fromRGBO(69, 53, 193,1)),
+                    child: Text(
+                      'Registrarse',
+                      style: TextStyle(
+                        color: Colors.white
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
