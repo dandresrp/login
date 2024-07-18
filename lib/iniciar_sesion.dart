@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 
 class InicioSesion extends StatelessWidget {
+  const InicioSesion({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Container(
-          color: Color.fromRGBO(119, 228, 200,1),
+          decoration: BoxDecoration(
+            color: Color.fromRGBO(209, 208, 221, 1),
+            borderRadius: BorderRadius.circular(10.0)
+          ),
           margin: EdgeInsets.all(30),
-          padding: EdgeInsets.all(30),
+          padding: EdgeInsets.all(20),
           height: 300,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text('Iniciar sesión'),
               Text('Correo electrónico'),
