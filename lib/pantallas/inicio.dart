@@ -5,6 +5,8 @@ class PantallaHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
@@ -13,8 +15,8 @@ class PantallaHome extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text('Bienvenido Viajero')
+          children:  const [
+            Text('Bienvenido ')
           ],
         ),
       ),

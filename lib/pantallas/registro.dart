@@ -18,7 +18,6 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
   final contrasenia1controller = TextEditingController();
   final contrasenia2controller = TextEditingController();
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,6 +61,7 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
                             return('El nombre de usuario muy largo');
                           }
                           return null;},
+
                         decoration: InputDecoration(
                           labelText: 'Nombre de Usuario', 
                           icon: Icon(Icons.person,size: 25,),
@@ -76,7 +76,7 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
                         validator: (value) {
                           if(value == null || value.isEmpty || value.trim().isEmpty)
                           {
-                            return('El Correo Electronico es obligatorio');
+                            return('El Correo Electrónico es obligatorio');
                           }
                           if( !RegExp(r'^[^@]+@unah.hn').hasMatch(value))
                           {
@@ -85,7 +85,7 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
                           return null;
                         },
                         decoration: InputDecoration(
-                          labelText: 'Correo Electronico',
+                          labelText: 'Correo Electrónico',
                           icon: Icon(Icons.email,size: 25,) 
                         ),
                       ),
@@ -98,17 +98,22 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
                         validator: (value) {
                           if(value == null || value.isEmpty || value.trim().isEmpty)
                           {
-                            return('El Telefono es obligatorio');
+                            return('El Teléfono es obligatorio');
+                          }
+                          if (!RegExp(r'^(3|9)').hasMatch(value))
+                          {
+                            return 'Debe empezar con 3 o 9';
                           }
                           if( value.length == 8 )
                           {
                             return null; 
                           }else{
-                            return('Telefono no valido. Ejem.(54545454)');
+                            return('Teléfono no valido. Ejem.(54545454)');
                           }
+                          
                         },
                         decoration: InputDecoration(
-                          labelText: 'Telefono (+504)',
+                          labelText: 'Teléfono (+504)',
                           icon: Icon(Icons.phone,size: 25,),
                         ),
                       ),
@@ -193,7 +198,7 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
                 ElevatedButton(
                   onPressed: () {
                     if (formkey.currentState!.validate()) {
-                      Navigator.pushReplacementNamed(context,'home');
+                      Navigator.pushReplacementNamed(context,'registro');
                        final datos = {
                           'nombre': usuariocontroller.text,
                           'correo': correocontroller.text,
