@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/custom_widgets.dart';
 
 class PantallaHome extends StatelessWidget {
   const PantallaHome({super.key});
@@ -29,23 +30,9 @@ class PantallaHome extends StatelessWidget {
                 color: Colors.white,
               ),
               SizedBox(height: 20),
-              Text(
-                'Bienvenido!',
-                style: TextStyle(
-                  fontSize: 24,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              CustomTextTitulos('Bienvenido!'),
               SizedBox(height: 10,),
-              Text(
-                correo,
-                style: TextStyle(
-                  fontSize: 24,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              CustomTextTitulos(correo),
             ],
           ),
         ),

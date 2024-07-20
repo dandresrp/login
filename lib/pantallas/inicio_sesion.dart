@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/custom_widgets.dart';
 
 class InicioSesion extends StatefulWidget {
   const InicioSesion({super.key});
@@ -109,12 +110,9 @@ class _InicioSesionState extends State<InicioSesion> {
                           }
                         },
                         style: TextButton.styleFrom(backgroundColor: Colors.indigo),
-                        child: Text(
-                          'Iniciar Sesión',
-                          style: TextStyle(
-                            color: Colors.white
-                          ),
-                        ),
+                        child: CustomTextBotones(
+                          'Iniciar Sesión'
+                        )
                       ),
                       TextButton(
                         onPressed: () {
@@ -124,12 +122,9 @@ class _InicioSesionState extends State<InicioSesion> {
                           );
                         },
                         style: TextButton.styleFrom(backgroundColor: Colors.indigo),
-                        child: Text(
-                          'Registrarse',
-                          style: TextStyle(
-                            color: Colors.white
-                          ),
-                        ),
+                        child: CustomTextBotones(
+                          'Registrarse'
+                        )
                       ),
                     ],
                   ),

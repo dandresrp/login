@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/custom_widgets.dart';
 
 class PantallaRegistro extends StatefulWidget {
   const PantallaRegistro({super.key});
@@ -212,11 +213,8 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.indigo
                   ),
-                  child: Text(
-                    'Registrarse',
-                    style: TextStyle(
-                      color: Colors.white
-                    ),
+                  child: CustomTextBotones(
+                    'Registrarse'
                   )
                   ),
                 TextButton(
