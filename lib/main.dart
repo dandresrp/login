@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget	{
         routes: {
           'iniciarSesion': (context) => InicioSesion(),
           'registro': (context) => PantallaRegistro(),
-          'home': (context) => PantallaHome(),
+          'inicio': (context) => PantallaHome(),
         },
      );
   }

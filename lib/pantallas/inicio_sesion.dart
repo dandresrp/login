@@ -14,8 +14,8 @@ class _InicioSesionState extends State<InicioSesion> {
   bool _mostrarContrasenia = false;
 
   List<Usuario> usuarios = [
-    Usuario(correo: "driosp@unah.hn", contrasenia: "Contrasenia123!"),
-    Usuario(correo: "robertosanchez@unah.hn", contrasenia: "Contrasenia456!"),    
+    Usuario(correo: "driosp@unah.hn", contrasenia: "20212030281"),
+    Usuario(correo: "robertosanchez@unah.hn", contrasenia: "20212020361"),    
   ];
 
   @override
@@ -98,7 +98,7 @@ class _InicioSesionState extends State<InicioSesion> {
                             if (credencialesValidas) {
                               Navigator.pushReplacementNamed(
                                 context,
-                                'home',
+                                'inicio',
                                 arguments: correoController.text,
                               );
                             } else {

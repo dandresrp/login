@@ -9,14 +9,14 @@ class PantallaHome extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: Text('Inicio'),
         centerTitle: true,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Bienvenido $correo')
+            Text('Bienvenido, $correo')
           ],
         ),
       ),
