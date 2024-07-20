@@ -98,7 +98,7 @@ class _InicioSesionState extends State<InicioSesion> {
                             if (credencialesValidas) {
                               Navigator.pushReplacementNamed(
                                 context,
-                                'inicio',
+                                '/inicio',
                                 arguments: correoController.text,
                               );
                             } else {
@@ -118,7 +118,10 @@ class _InicioSesionState extends State<InicioSesion> {
                       ),
                       TextButton(
                         onPressed: () {
-                          Navigator.of(context).pushNamed('registro');
+                          Navigator.pushReplacementNamed(
+                            context,
+                            '/registro'
+                          );
                         },
                         style: TextButton.styleFrom(backgroundColor: Colors.indigo),
                         child: Text(

@@ -195,10 +195,9 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
                 ),
                     
                 //Botones
-                ElevatedButton(
+                TextButton(
                   onPressed: () {
                     if (formkey.currentState!.validate()) {
-                      Navigator.pushReplacementNamed(context,'registro');
                        final datos = {
                           'nombre': usuariocontroller.text,
                           'correo': correocontroller.text,
@@ -222,8 +221,10 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
                   ),
                 TextButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed('iniciarSesion');
-                    setState(() {});
+                    Navigator.pushReplacementNamed(
+                      context,
+                      '/'
+                    );
                   },
                   child: Text(
                     '¿Ya tienes una cuenta?',
