@@ -5,7 +5,7 @@ class PantallaHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+    final String correo = ModalRoute.of(context)!.settings.arguments as String;
 
     return Scaffold(
       appBar: AppBar(
@@ -15,14 +15,11 @@ class PantallaHome extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children:  const [
-            Text('Bienvenido ')
+          children: [
+            Text('Bienvenido $correo')
           ],
         ),
       ),
-
-
-
     );
   }
 }
