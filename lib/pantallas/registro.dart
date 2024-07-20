@@ -210,14 +210,27 @@ class _PantallaRegistroState extends State<PantallaRegistro> {
                     }  
                     
                   },
-                  child: Text('Registrarse')
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.indigo
+                  ),
+                  child: Text(
+                    'Registrarse',
+                    style: TextStyle(
+                      color: Colors.white
+                    ),
+                  )
                   ),
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).pushNamed('iniciarSesion');
                     setState(() {});
                   },
-                  child: Text('¿Ya tienes una cuenta?'),
+                  child: Text(
+                    '¿Ya tienes una cuenta?',
+                    style: TextStyle(
+                      color: Colors.indigo
+                    ),
+                  ),
                 )  
               ],
             ),
